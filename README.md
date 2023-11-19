@@ -1,16 +1,6 @@
 # React Tailwind CSS Boilerplate
 
-This is a simple boilerplate for starting React projects with Tailwind CSS. It comes pre-configured with the necessary setup to quickly get you up and running with a React application styled using Tailwind CSS.
-
-## Features
-
-- React 18
-- Tailwind CSS
-- PostCSS
-- Vite
-- Babel
-- ESLint and Prettier for code consistency
-- Hot Module Replacement (HMR) for a better development experience
+This is a simple boilerplate for starting React projects with Tailwind CSS. It comes pre-configured with Vite to quickly get you up and running with a React application styled using Tailwind CSS.
 
 ## Getting Started
 
