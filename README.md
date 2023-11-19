@@ -13,7 +13,7 @@ This is a simple boilerplate for starting React projects with Tailwind CSS. It c
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/react-tailwind-boilerplate.git
+git clone https://github.com/Sriram-Ramakrishnan/react-tailwind-boilerplate.git
 ```
 2. Navigate to the project folder:
 
@@ -33,7 +33,7 @@ To start the development server and see your app in action, run:
 npm run dev
 ```
 
-Tis will open your app in the default web browser at http://localhost:5174. The development server will automatically reload if you make changes to the code.
+This will open your app in the default web browser at http://localhost:5173. The development server will automatically reload if you make changes to the code.
 
 ### Building for Production
 To create a production-ready build, use:
