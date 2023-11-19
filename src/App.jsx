@@ -1,35 +1,38 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+
+const contents = [
+  "This is a simple boilerplate for starting React projects with Tailwind CSS. It comes pre-configured with the necessary setup to quickly get you up and running with a React application styled using Tailwind CSS.", 
+  "You can add external frameworks such as DaisyUI and PrelineUI in the plugins section of tailwind.config.css",
+
+]
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className='flex flex-col gap-20 items-center justify-center bg-gray-800 w-full h-screen'>
+        <h1
+          class="font-extrabold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-blue-200 to-indigo-600"
+        >
+          React Tailwind boilerplate
+        </h1>
+
+        <ul className='w-1/2 list-disc grid grid-cols-1 gap-4 justify-items-start'>
+          {contents.map((point) => {
+            return  (
+              <li className='text-xl text-blue-200 text-left self-start'>
+                {point}
+              </li>
+            )
+          })}    
+        </ul> 
+
+        <div className='text-blue-400 text-2xl font-bold'>
+          For more information,refer the&nbsp;
+          <a className=' transition ease-linear hover:underline hover:text-blue-600' href="https://tailwindcss.com/docs">TailwindCSS documentation</a>
+
+        </div>
+
+    </div>
   )
 }
 
-export default App
+export default App;
